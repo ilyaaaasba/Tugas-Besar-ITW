@@ -1,0 +1,142 @@
+
+html {
+		position: relative;
+}
+
+body {
+		margin-bottom: 10px;
+		margin-top:30px;
+	}
+
+.jumbotron {
+		min-height: 100px;
+		border-left: 5px solid yellow;
+		border-right: 5px solid red;
+}
+.jumbotron img{
+			height: 300px;
+			width: 400px;
+}
+
+ hr {
+		width:500px;
+		border-top: 5px solid #999;
+}
+ section {
+		min-height:500px;
+}
+img {
+		width: 500px;
+		height: 300px;
+}
+.gambar {
+		position: relative;
+		border:5px solid grey;
+		box-shadow:  0px 0px 5px rgba(0,0,0,.3);
+		-webkit-box-shadow: 0px 0px 5px rgba(0,0,0,.3);
+		-moz-box-shadow: 0px 0px 5px rgba(0,0,0,.3);
+		-o-box-shadow: 0px 0px 5px rgba(0,0,0,.3);
+		-ms-box-shadow: 0px 0px 5px rgba(0,0,0,.3);
+		cursor: pointer;
+		overflow: hidden;
+}
+.gambar img {
+		width:450px;
+		transition: all 1.5s;
+		-webkit-transition: all 1.5s;
+		-moz-transition: all 1.5s;
+		-ms-transition: all 1.5s;
+}
+
+.gambar:hover .caption {
+		opacity: 1;
+		top:0px;
+}
+.gambar:hover img{
+	filter: sepia(10%);
+	-webkit-filter: sepia(10%);
+	-moz-filter: sepia(10%);
+	-ms-filter: sepia(10%);
+	transform: scale(1.1);
+	-webkit-transform: scale(1.1);
+	-moz-transform: scale(1.1);
+	-ms-transform: scale(1.1);
+}
+.caption {
+		opacity:0;
+ 		position: absolute;
+		top:-100%;
+		width:100%;
+		height:100%;
+		background: rgba(0,0,0,0.4);
+		color:white;
+		font-family: arial;
+		transition: all .4s ease-in;
+		-webkit-transition: all .4s ease-in;
+		-moz-transition: all .4s ease-in;
+		-ms-transition: all .4s ease-in;
+		transition-delay: .5s;
+		-webkit-transition-delay: .5s;
+		-moz-transition-delay: .5s;
+		-ms-transition-delay: .5s;
+}
+.caption h3, .caption p {
+		padding-top: 0px;
+		padding-bottom: 0px;
+		padding-right: 20px;
+		padding-left: 20px;
+		margin-top: 10px;
+		margin-bottom: 10px;
+		position: relative;
+		left: 100%;
+		transition: all .4s;
+		-webkit-transition: all .4s;
+		-moz-transition: all .4s;
+		-o-transition: all .4s;
+		-ms-transition: all .4s;
+}
+.gambar:hover h3,.gambar:hover p {
+		left: 0px;
+}
+.caption h3 {
+		margin-top: 10px;
+		background-color: black;
+		transition-delay: 1s;
+		-moz-transition-delay: 1s;
+		-webkit-transition-delay: 1s;
+		-ms-transition-delay: 1s;
+}
+.caption p {
+		transition-delay: 1.2s;
+		-webkit-transition-delay: 1.2s;
+		-moz-transition-delay: 1.2s;
+		-ms-transition-delay: 1.2s;
+}
+#content {
+	width: 460px;
+	float: right;
+	margin-right: 20px;
+	padding-right: 20px;
+	min-height: 400px;
+}
+
+footer {
+		position: absolute;
+		bottom:-100px;
+		width:100%;
+		height:100px;
+		background-color: #000;
+		color:#aaa;
+		padding-top:20px;
+
+}
+footer p {
+		color:#fff;
+		font-size:0.9em;
+
+
+}
+footer p i {
+		color:green;
+}
+
